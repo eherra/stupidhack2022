@@ -1,15 +1,22 @@
 const toggleCryption = () => {
-    const decryptArea = document.getElementById('decryptTextArea')
+    const decryptTextArea = document.getElementById('decryptTextArea')
     const encryptTextArea = document.getElementById('encryptTextArea')
 
-    if (decryptArea.disabled) {
-        decryptArea.disabled = false
+    if (decryptTextArea.disabled) {
+        decryptTextArea.disabled = false
+        document.getElementById("cryptText").innerHTML = "encrypt"
+        encryptTextArea.placeholder = "Waiting..."
+        decryptTextArea.placeholder = "Insert text..."
+
     } else {
-        decryptArea.disabled = true
+        decryptTextArea.disabled = true
     }
 
     if (encryptTextArea.disabled) {
         encryptTextArea.disabled = false
+        document.getElementById("cryptText").innerHTML = "decrypt"
+        decryptTextArea.placeholder = "Waiting..."
+        encryptTextArea.placeholder = "Insert text..."
     } else {
         encryptTextArea.disabled = true
     }

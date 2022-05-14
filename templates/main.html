@@ -1,4 +1,45 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1>Testing {{ test }}</h1>
+<div style="text-align: center; margin-top: 2em; margin-bottom: 5em">
+    <h2 id="topic">A Nom Crypter App</h2>
+    <p id="detail">A NLP cryptography trained with Romeo and Juliet by William Shakespeare</p>
+    <audio src="{{ url_for('static', filename='music/whatIsLove.mp3') }}" id="myAudio"></audio>
+    <button id="audioButton" class="btn btn-info" onClick="enableProtekk()"><i class="fas fa-dice-d20"></i> Enable Protekk premium+</button>
+    <button class="btn btn-info" onClick="toggleCryption()"><i class="fas fa-random"></i> Switch to <span id="cryptText">decrypt</span></button>
+    {% include 'flash.html' %}
+</div>
+<div class="container" id="kek">
+    {% include 'components/textArea.html' %}
+    {% include 'components/result-card.html' %}
+</div>
+<script>
+    const enableProtekk = () => {
+        const topic = document.getElementById("topic")
+        const detail = document.getElementById("detail")
+        const enLabel = document.getElementById("encryptLabel")
+        if (document.getElementById("audioButton").textContent.includes("Enable")) {
+            document.getElementById("myAudio").play();
+            document.getElementById("audioButton").innerHTML = "Shut down Protekk premium+"
+            const bodyDiv = document.getElementById("bodyDiv")
+            bodyDiv.style.backgroundImage = "url({{url_for('static', filename='images/shake.jpeg')}}"
+            bodyDiv.style.backgroundPosition = "center"
+            bodyDiv.style.backgroundRepeat = "no-repeat"
+            bodyDiv.style.backgroundSize = "cover"
+            topic.style.color = "white"
+            detail.style.color = "white"
+            enLabel.style.color = "white"
+
+            console.log("cliked")
+        } else {
+            document.getElementById("myAudio").pause();
+            document.getElementById("audioButton").innerHTML = "Enable Protekk premium+"
+            document.getElementById("bodyDiv").style.backgroundImage = ""
+            topic.style.color = "black"
+            detail.style.color = "black"
+            enLabel.style.color = "black"
+
+        }
+    }
+</script>
 {% endblock %}
+<script src="{{ url_for('static', filename='js/switchCryption.js') }}"></script>

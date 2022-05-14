@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/" method="POST">
+  <div class="row justify-content-center">
+    <div class="col-5">
+        {% include 'components/encryptTextArea.html' %}
+    </div>
+    <div class="col-5">
+        {% include 'components/decryptTextArea.html' %}
+    </div>
+  </div>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <button id="cryptButton" onClick="spinnerStart()" class="btn btn-info" type="submit" disabled><i class="fas fa-hand-spock"></i> Do Crypt</button>
+            <button style="visibility: hidden" id="spinnerButton" class="btn btn-info" disabled>
+              <span class="spinner-border spinner-border-sm"></span>
+              Crypting...
+            </button>
+        </div>
+    </div>
+</form>
+<script>
+    const isEmpty = str => !str.trim().length;
+
+    document.addEventListener('input', event => {
+        const encryptTextArea = document.getElementById("encryptTextArea").value;
+        const decryptTextArea = document.getElementById("decryptTextArea").value;
+
+        const cryptButton = document.getElementById('cryptButton')
+            if (isEmpty(encryptTextArea) && isEmpty(decryptTextArea)) {
+                cryptButton.disabled = true
+            } else {
+                cryptButton.disabled = false
+            }
+    })
+
+    const spinnerStart = () => {
+        document.getElementById('cryptButton').style.visibility = 'hidden';
+        document.getElementById('cryptButton').style.position = 'absolute';
+        document.getElementById('spinnerButton').style.visibility = 'visible';
+    }
+</script>
+{% endblock %}
