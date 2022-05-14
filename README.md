@@ -2,18 +2,20 @@
 organized by <b>Junction</b>
 
 ### About
-Text encrypter <-> decrypter with human language crypter solution, NLP model trained with Romeo and Juliet by William Shakespeare
+Text encrypter <-> decrypter with human language cryptography solution, NLP model trained with Romeo and Juliet by William Shakespeare
 
-#### Why?
+### Why?
 
-Due to the future need of quantum computer resistant cryptology, solution must be made to provide continuing for a secure communication.
+Due to the future need of quantum computer resistant cryptography, solution must be innovated in order to provide continuity for a secure communication.
+
+### Case
 Computers are good with numbers and random characters piled to togethor.
 
 Computers having difficulties with:
 - natural language
 - <i>love</i>
 
-This application uses the book Romeo and Juliet to find closest similar words for the encrypted text and process a procedure to match the input text words.
+Therefore this application uses the book Romeo and Juliet to find closest similar words in order to encrypt input text, and then does a procedure with help of NLP and provides an encrypted result. 
 
 ### Example
 
@@ -29,12 +31,12 @@ Output:
 <img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/info.png" alt="reviewPhoto">
 
 
-#### Application's known issues
+### Application's known issues
 - This cryptography approach not <i>really</i> secure. :)
-- Bugs
+- Bugs?
 - Spaghetti code
 
-#### How to run the app
+### How to run the app
 
 To run this project you will need Python3.
 
