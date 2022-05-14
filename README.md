@@ -33,3 +33,28 @@ Output:
 - This cryptography approach not <i>really</i> secure. :)
 - Bugs
 - Spaghetti code
+
+#### How to run the app
+
+To run this project you will need Python3.
+
+Start by cloning this project. Enter root and create file called ```.env``` and paste the following there:
+
+```
+SECRET_KEY=<your secret key>
+```
+
+then do the following commands:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+install requirements with:
+
+```pip install -r requirements.txt```
+
+Start with:
+
+```flask run```
