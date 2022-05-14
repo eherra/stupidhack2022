@@ -31,6 +31,6 @@ Output:
 
 
 #### Application's known issues
-- This cryptography approach not secure. :)
+- This cryptography approach not <i>really</i> secure. :)
 - Bugs
 - Spaghetti code
