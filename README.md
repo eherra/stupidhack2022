@@ -6,15 +6,14 @@ Text encrypter <-> decrypter with human language crypter solution, NLP model tra
 
 #### Why?
 
-Due to the future need of quantum computer resistant cryptology, solution must be made to provide continuement for a secure communication.
-
+Due to the future need of quantum computer resistant cryptology, solution must be made to provide continuing for a secure communication.
 Computers are good with numbers and random characters piled to togethor.
 
 Computers having difficulties with:
 - natural language
 - <i>love</i>
 
-This application uses the book Romeo and Juliet to find closest similiar words for the encrypted text and process a procedure to match the input text words.
+This application uses the book Romeo and Juliet to find closest similar words for the encrypted text and process a procedure to match the input text words.
 
 ### Example
 
