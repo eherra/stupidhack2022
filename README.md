@@ -26,6 +26,10 @@ Encrypted:
 Output:
 <code>rich peppered seems strangers eats drums</code>
 
+### Preview
+<img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/info.png" alt="reviewPhoto">
+
+
 #### Application's known issues
 - This cryptography approach not secure. :)
 - Bugs
