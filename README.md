@@ -9,7 +9,7 @@ Text encrypter <-> decrypter with human language cryptography solution, NLP mode
 Due to the future need of quantum computer resistant cryptography, solution must be innovated in order to provide continuity for a secure communication.
 
 ### Case
-Computers are good with numbers and random characters piled to togethor.
+Computers are good with numbers and random characters piled togethor.
 
 Computers having difficulties with:
 - natural language
@@ -38,7 +38,7 @@ Output:
 
 ### How to run the app
 
-To run this project you will need Python3.
+To run this project you will need Python.
 
 Start by cloning this project. Enter root and create file called ```.env``` and paste the following there:
 
