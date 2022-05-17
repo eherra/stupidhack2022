@@ -1,5 +1,5 @@
 ## [Stupid ~~Hack~~ Scam 2022](https://app.hackjunction.com/events/stupid-hack-2022)
-This app was build during a 24-hour length hackathon organized by <b>Junction</b>
+This app was built within a 24 hours long hackathon organized by <b>Junction</b>
 
 ### About
 Text encrypter <-> decrypter with human language cryptography solution, NLP model trained with Romeo and Juliet by William Shakespeare
