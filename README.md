@@ -18,8 +18,8 @@ Computers having difficulties with:
 Therefore this application uses the book Romeo and Juliet to find closest similar words in order to encrypt input text, and then does a procedure with help of NLP and provides an encrypted result. 
 
 <p float="left">
-    <img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/homer.png" alt="homerMeme" width="50%" height="50%">
-    <img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/meeting.png" alt="meeting" width="50%" height="50%">
+    <img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/meeting.jpeg" alt="meeting" width="49%" height="49%">
+    <img src="https://github.com/eherra/stupidhack2022/blob/main/docs/images/homer.jpeg" alt="homerMeme" width="49%" height="49%">
 </p>
 
 ### Example
